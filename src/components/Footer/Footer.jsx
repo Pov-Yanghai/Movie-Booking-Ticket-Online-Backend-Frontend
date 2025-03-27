@@ -1,5 +1,8 @@
 import React from 'react';
 import './Footer.css'; // Import the CSS file
+import { FaFacebook, FaInstagram, FaYoutube, FaTiktok, FaTelegram } from 'react-icons/fa'; // Social Media Icons
+import { AiFillApple, AiFillAndroid } from 'react-icons/ai'; // App Store and Google Play Icons
+import { SiVisa, SiMastercard } from 'react-icons/si'; // Payment Icons
 
 const Footer = () => {
   return (
@@ -27,29 +30,27 @@ const Footer = () => {
       <div className="footer-section download">
         <h3>Download Our App</h3>
         <div className="app-icons">
-          <a href="#"><img src="./images/appst.jpg" alt="Google Play" /></a>
-          <a href="#"><img src="./images/playst.png" alt="App Store" /></a>
+          <a href="#"><AiFillApple size={40} color="#FFF" /></a> {/* Apple icon */}
+          <a href="#"><AiFillAndroid size={40} color="#3ddc84" /></a> {/* Android icon */}
         </div>
       </div>
 
       <div className="footer-section social">
         <h3>Follow Our Social Media</h3>
         <div className="social-icons">
-          <a href="#"><img src="./images/facebook-3d-vector-logo_1072236-11.avif" alt="Facebook" /></a>
-          <a href="#"><img src="./images/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3JtNTMzLW5lb24-MDAzLmpwZw.webp" alt="Instagram" /></a>
-          <a href="#"><img src="./images/youtube-logo-youtube-icon-youtube-symbol-free-free-vector.jpg" alt="YouTube" /></a>
-          <a href="#"><img src="./images/tiktok.png" alt="TikTok" /></a>
-          <a href="#"><img src="./images/telegram.png" alt="Telegram" /></a>
+          <a href="#"><FaFacebook size={30} color="#3b5998" /></a> {/* Facebook icon */}
+          <a href="#"><FaInstagram size={30} color="#e1306c" /></a> {/* Instagram icon */}
+          <a href="#"><FaYoutube size={30} color="#ff0000" /></a> {/* YouTube icon */}
+          <a href="#"><FaTiktok size={30} color="#000" /></a> {/* TikTok icon */}
+          <a href="#"><FaTelegram size={30} color="#0088cc" /></a> {/* Telegram icon */}
         </div>
       </div>
 
       <div className="footer-section payment">
         <h3>Payment</h3>
         <div className="payment-icons">
-          <img src="./images/ABA.png" alt="ABA" />
-          <img src="./images/payment_pay_way.png" alt="Payway" />
-          <img src="./images/visa-icon-2048x628-6yzgq2vq.png" alt="Visa" />
-          <img src="./images/mastercard1.png" alt="MasterCard" />
+          <a href="#"><SiVisa size={40} color="#001f99" /></a> {/* Visa icon */}
+          <a href="#"><SiMastercard size={40} color="#eb001b" /></a> {/* MasterCard icon */}
         </div>
       </div>
     </footer>

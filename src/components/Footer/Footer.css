@@ -1,162 +1,63 @@
 /* Footer Section */
 .footer {
-    background: rgba(0, 0, 0, 0.9);
-    color: #fff;
+    background-color: #222;
+    color: white;
+    padding: 50px 20px;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    padding: 30px 20px;
-    justify-content: space-between; /* Make footer sections spread out */
-    border-radius: 30px;
-    border-top: 1px solid #333;
-    width: 100%;  /* Make footer span the full width */
-    min-height: 100px; /* Minimum height */
-}
-
-/* Footer Sections */
-.footer-section {
-    margin-bottom: 20px;  /* Consistent spacing */
-    flex: 1;
-    min-width: 200px;
-    text-align: center;   /* Center content */
-}
-
-/* Footer Titles */
-.footer-section h3 {
-    font-size: 18px;
-    margin-bottom: 15px;
-    font-weight: 700;
+  }
+  
+  /* Footer Section Header */
+  .footer h3 {
     color: #FFC300;
-}
-
-/* Footer Links */
-.footer-section ul {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+  }
+  
+  /* Footer Links */
+  .footer-section ul {
     list-style: none;
     padding: 0;
-    text-align: center;
-}
-
-.footer-section ul li {
-    margin: 8px 0;
-}
-
-.footer-section ul li a {
-    color: #fff;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    color: white;
     text-decoration: none;
-    font-size: 14px;
-    transition: color 0.3s ease;
-}
-
-.footer-section ul li a:hover {
+  }
+  
+  .footer-section ul li a:hover {
     color: #FFC300;
-}
-
-/* Icon Styles */
-.footer-section .app-icons img,
-.footer-section .social-icons img,
-.footer-section .payment-icons img {
-    width: 30px;
-    margin: 5px;
-    border-radius: 50%;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.footer-section .app-icons img:hover,
-.footer-section .social-icons img:hover,
-.footer-section .payment-icons img:hover {
-    opacity: 0.8;
-    transform: scale(1.05);
-}
-
-/* Responsive Adjustments for laptops and larger screens */
-@media (min-width: 1025px) {
-    .footer {
-        padding: 40px 20px;  /* Increase padding for larger screens */
-        justify-content: space-between;  /* Space out footer sections evenly */
-    }
-
-    .footer-section h3 {
-        font-size: 20px;  /* Larger title for laptop screens */
-    }
-
-    .footer-section ul li a {
-        font-size: 15px;  /* Slightly larger font size for links */
-    }
-
-    .footer-section .app-icons img,
-    .footer-section .social-icons img,
-    .footer-section .payment-icons img {
-        width: 35px;  /* Larger icons for laptop */
-    }
-}
-
-/* Responsive Adjustments for tablets and small laptops */
-@media (max-width: 1024px) {
-    .footer {
-        padding: 30px 20px;  /* Adjust padding for tablets */
-        justify-content: center;  /* Center content on tablets */
-    }
-
-    .footer-section h3 {
-        font-size: 18px;  /* Adjust title size */
-    }
-
-    .footer-section ul li a {
-        font-size: 14px;  /* Adjust font size */
-    }
-
-    .footer-section .app-icons img,
-    .footer-section .social-icons img,
-    .footer-section .payment-icons img {
-        width: 30px;  /* Adjust icon size for tablet screens */
-    }
-}
-
-/* Responsive Adjustments for mobile (below 768px) */
-@media (max-width: 768px) {
-    .footer {
-        flex-direction: column;  /* Stack sections vertically */
-        align-items: center;  /* Center content */
-        padding: 20px 15px;  /* Adjust padding for mobile */
-    }
-
-    .footer-section {
-        width: 100%;  /* Take full width for each section */
-        text-align: center;  /* Center text in each section */
-        margin-bottom: 30px;  /* Add space between sections */
-    }
-
-    .footer-section h3 {
-        font-size: 16px;  /* Smaller title size for mobile */
-    }
-
-    .footer-section ul li a {
-        font-size: 13px;  /* Adjust font size for mobile */
-    }
-
-    .footer-section .app-icons img,
-    .footer-section .social-icons img,
-    .footer-section .payment-icons img {
-        width: 25px;  /* Adjust icon size for mobile */
-    }
-}
-
-/* Extra small screen adjustments for very small screens (below 480px) */
-@media (max-width: 480px) {
-    .footer {
-        padding: 15px 10px;  /* Adjust padding for very small screens */
-    }
-
-    .footer-section h3 {
-        font-size: 14px;  /* Reduce title size further */
-    }
-
-    .footer-section ul li a {
-        font-size: 12px;  /* Smaller font size for links */
-    }
-
-    .footer-section .app-icons img,
-    .footer-section .social-icons img,
-    .footer-section .payment-icons img {
-        width: 20px;  /* Further reduce icon size */
-    }
-}
+  }
+  
+  /* App Icons */
+  .app-icons a {
+    margin: 0 15px;
+  }
+  
+  .app-icons svg {
+    cursor: pointer;
+  }
+  
+  /* Social Media Icons */
+  .social-icons a {
+    margin: 0 10px;
+  }
+  
+  .social-icons svg {
+    cursor: pointer;
+  }
+  
+  /* Payment Icons */
+  .payment-icons a {
+    margin: 0 15px;
+  }
+  
+  .payment-icons svg {
+    cursor: pointer;
+  }
+  

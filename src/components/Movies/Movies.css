@@ -1,4 +1,4 @@
-/* Movies Section */
+/* ======= MOVIES SECTION ======= */
 .info-section {
     padding: 50px 20px;
     background: rgba(0, 0, 0, 0.75);
@@ -14,7 +14,7 @@
     font-size: 2em;
 }
 
-/* Movie Grid */
+/* ======= MOVIE GRID ======= */
 .movie-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -25,20 +25,27 @@
     padding: 0 10px;
 }
 
-/* Movie Item */
+/* ======= MOVIE ITEM ======= */
 .movie-item {
     background: rgba(255, 87, 51, 0.85);
     padding: 15px;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    max-width: 90%; /* Ensure flexibility */
-    min-width: 150px; /* Prevent shrinking too much */
+    max-width: 90%;
+    min-width: 150px;
     text-align: center;
     animation: fadeInUp 1s ease-out;
 }
 
-/* Movie Image */
+/* ======= REMOVE LINK UNDERLINE & MAKE FULL CARD CLICKABLE ======= */
+.movie-item a {
+    text-decoration: none;
+    color: inherit;
+    display: block; /* Makes the entire card clickable */
+}
+
+/* ======= MOVIE IMAGE ======= */
 .movie-item img {
     width: 100%;
     height: auto;
@@ -46,12 +53,12 @@
     transition: transform 0.3s ease;
 }
 
-/* Movie Text Styling */
+/* ======= MOVIE TEXT STYLING ======= */
 .movie-item h3 {
     margin: 15px 0;
     font-size: 18px;
-    color: #000000;
-    font-family: 'Khmer', sans-serif; /* Assuming you have Khmer font loaded */
+    color: #000;
+    font-family: 'Khmer', Arial, sans-serif;
 }
 
 .movie-item .price {
@@ -73,7 +80,7 @@
     color: #FFC300;
 }
 
-/* Hover Effect */
+/* ======= HOVER EFFECT ======= */
 .movie-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
@@ -82,28 +89,27 @@
 /* ======= MOBILE RESPONSIVENESS ======= */
 @media (min-width: 1024px) {
     .movie-grid {
-        grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+        grid-template-columns: repeat(4, 1fr);
         gap: 20px;
     }
+}
 
-    .movie-item {
-        max-width: 100%;
+@media (max-width: 1023px) {
+    .movie-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
+
 @media (max-width: 768px) {
     .movie-grid {
-        grid-template-columns: 1fr; /* Single column on small screens */
+        grid-template-columns: 1fr;
         gap: 15px;
-    }
-
-    .movie-item {
-        max-width: 100%;
     }
 }
 
 @media (max-width: 480px) {
     .info-section h2 {
-        font-size: 1.5em; /* Smaller heading */
+        font-size: 1.5em;
     }
 
     .movie-item {
@@ -122,7 +128,15 @@
     }
 }
 
-/* Keyframe Animations */
+/* ======= TOUCHSCREEN EFFECTS (NO HOVER) ======= */
+@media (hover: none) {
+    .movie-item:active {
+        transform: scale(1.05);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    }
+}
+
+/* ======= KEYFRAME ANIMATIONS ======= */
 @keyframes fadeInUp {
     from {
         opacity: 0;

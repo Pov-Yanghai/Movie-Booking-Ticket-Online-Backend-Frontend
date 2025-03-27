@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Login.css';
 
 const Login = () => {
@@ -7,13 +8,25 @@ const Login = () => {
     password: ''
   });
 
+  const navigate = useNavigate();
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle login logic
+
+    const { email, password } = formData;
+    const users = JSON.parse(localStorage.getItem('users')) || [];
+    const user = users.find((user) => user.email === email && user.password === password);
+
+    if (user) {
+      alert('Login successful');
+      navigate('/'); // Redirect to home after login
+    } else {
+      alert('Invalid email or password');
+    }
   };
 
   return (
-    <section id="booking" className="login-section">
+    <section className="login-section">
       <h2>Login Here</h2>
       <form onSubmit={handleSubmit}>
         <input
@@ -30,7 +43,7 @@ const Login = () => {
         />
         <button type="submit">Login</button>
       </form>
-      <p>Don't have an account? <a href="#signup">Sign up here</a></p>
+      <p>Don't have an account? <a href="/signup">Sign up here</a></p>
     </section>
   );
 };
