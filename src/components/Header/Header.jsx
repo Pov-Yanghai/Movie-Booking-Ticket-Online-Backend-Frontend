@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Header.css';
 import { Link } from 'react-router-dom';
+import LogoProfile from './LogoProfile';
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,14 +20,19 @@ function Header() {
           <li><Link to="/movies">Movies</Link></li>
           <li><Link to="/booking">Booking</Link></li>
           <li><Link to="/contact">Contact</Link></li>
-          <li><Link to="/login">Login</Link></li>
         </ul>
       </nav>
 
-      {/* Search Bar */}
-      <div className="search-bar">
-        <input type="text" placeholder="Search movies..." />
-        <button>Search</button>
+      {/* Search Bar and Profile Wrapper */}
+      <div className="header-right">
+        {/* Search Bar */}
+        <div className="search-bar">
+          <input type="text" placeholder="Search movies..." />
+          <button>Search</button>
+        </div>
+
+        {/* Profile */}
+        <LogoProfile />
       </div>
     </header>
   );

@@ -1,12 +1,13 @@
 import React from 'react';
 import Hero from '../components/Hero/Hero';
+import BookingSeat from '../components/Booking/BookingSeat';
 function Booking() {
   return (
 
     <div>
-    <h2>Movie Booking</h2>
-    <p>Book your favorite movies here!</p>
+   
     <Hero />
+    <BookingSeat />
      
     </div>
   );

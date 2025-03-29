@@ -1,6 +1,7 @@
 // src/pages/Contact.jsx
 import React, { useState } from 'react';
-import './Contact.css';  // Importing the CSS file for styling
+import './Contact.css'; // Importing the CSS file for styling
+import { PhoneIcon, EnvelopeIcon, ChatBubbleLeftIcon } from '@heroicons/react/24/outline'; // Importing Heroicons
 
 function Contact() {
   const [name, setName] = useState('');
@@ -16,6 +17,22 @@ function Contact() {
   return (
     <div className="contact-container">
       <h1>Contact Us</h1>
+
+      <div className="contact-info">
+        <div className="hotline">
+          <h2>Hotline</h2>
+          <p><PhoneIcon className="icon" /> 081 300 400</p>
+          <p><EnvelopeIcon className="icon" /> info@legend.com.kh</p>
+          <p><ChatBubbleLeftIcon className="icon" /> Messenger</p>
+        </div>
+
+        <div className="advertising">
+          <h2>Advertising & Partnership</h2>
+          <p><PhoneIcon className="icon" /> 087 888 045 / 087 888 048</p>
+          <p><EnvelopeIcon className="icon" /> marketing@MoviesBook.kh</p>
+        </div>
+      </div>
+
       <form onSubmit={handleSubmit} className="contact-form">
         <div className="form-group">
           <label htmlFor="name">Name:</label>

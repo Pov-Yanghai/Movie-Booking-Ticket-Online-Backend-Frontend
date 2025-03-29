@@ -1,12 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from 'react-router-dom';
 import './Hero.css';
 
 const Hero = ({
   title = "Book Your Movie Tickets Now",
   description = "Find your favorite movies and book tickets for the latest releases in cinemas near you.",
   buttonText = "Book Now",
-  buttonLink = "#booking",
+  buttonLink = "/booking", // Changed default to proper route
   onButtonClick,
   backgroundImage,
   subtitle,
@@ -48,15 +49,15 @@ const Hero = ({
         </p>
 
         <div className={`cta-container ${animationClass}`} style={delayStyle}>
-          <a
-            href={buttonLink}
+          <Link
+            to={buttonLink}
             className="cta-button"
             onClick={onButtonClick}
             role="button"
             aria-label="Book tickets"
           >
             {buttonText}
-          </a>
+          </Link>
         </div>
 
         <div className="search-container">

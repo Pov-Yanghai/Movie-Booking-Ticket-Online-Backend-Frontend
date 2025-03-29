@@ -11,56 +11,62 @@ header {
     top: 0;
     z-index: 1000;
     animation: fadeInDown 1s ease-out;
-}
-
-/* Logo */
-.logo {
+  }
+  
+  /* Logo */
+  .logo {
     font-size: 28px;
     font-weight: 700;
     color: #FF5733;
     text-transform: uppercase;
     letter-spacing: 3px;
     transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.logo:hover {
+  }
+  
+  .logo:hover {
     transform: scale(1.1);
     color: #FFC300;
-}
-
-/* Navigation Menu */
-nav {
+  }
+  
+  /* Navigation Menu */
+  nav {
     display: flex;
     align-items: center;
-}
-
-.nav-links {
+  }
+  
+  .nav-links {
     list-style: none;
     display: flex;
     gap: 20px;
-}
-
-.nav-links li a {
+  }
+  
+  .nav-links li a {
     text-decoration: none;
     color: white;
     font-size: 16px;
     transition: color 0.3s ease, border-bottom 0.3s ease;
-}
-
-.nav-links li a:hover {
+  }
+  
+  .nav-links li a:hover {
     color: #FFC300;
     border-bottom: 2px solid #FFC300;
-}
-
-/* Search Bar */
-.search-bar {
+  }
+  
+  /* Search Bar and Profile Container */
+  .header-right {
     display: flex;
     align-items: center;
-    position: relative;
-    animation: slideInRight 1s ease-out;
-}
-
-.search-bar input {
+    gap: 20px; /* Adjust gap as needed */
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between input and button */
+  }
+  
+  .search-bar input {
     padding: 8px 12px;
     border-radius: 20px;
     border: 1px solid #fff;
@@ -68,13 +74,9 @@ nav {
     outline: none;
     z-index: 1;
     transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.search-bar input:focus {
-    transform: scale(1.05);
-}
-
-.search-bar button {
+  }
+  
+  .search-bar button {
     padding: 8px 16px;
     background-color: #3381ff;
     border: none;
@@ -82,80 +84,66 @@ nav {
     color: white;
     font-size: 16px;
     cursor: pointer;
-    margin-left: 10px;
     transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.search-bar button:hover {
+  }
+  
+  .search-bar button:hover {
     background-color: #0056b3;
     transform: translateY(-2px);
-}
-
-/* Mobile Menu Toggle */
-.menu-toggle {
+  }
+  
+  /* Mobile Menu Toggle */
+  .menu-toggle {
     display: none;
     font-size: 2rem;
     color: white;
     cursor: pointer;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    /* Stack logo, menu, and right section on smaller screens */
     header {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 15px 20px;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 15px 20px;
     }
-
+  
     .menu-toggle {
-        display: block;
+      display: block;
     }
-
+  
     .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background: rgba(0, 0, 0, 0.9);
-        width: 100%;
-        padding: 10px 0;
-        text-align: center;
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background: rgba(0, 0, 0, 0.9);
+      width: 100%;
+      padding: 10px 0;
+      text-align: center;
     }
-
+  
     .nav-links.active {
-        display: flex;
+      display: flex;
     }
-
+  
+    /* Adjust the search bar and profile on mobile */
+    .header-right {
+      gap: 10px; /* Reduce space between search bar and profile */
+      display: flex;
+      align-items: center;
+    }
+  
     .search-bar {
-        width: 100%;
-        justify-content: center;
-        margin-top: 10px;
+      width: 100%;
+      justify-content: center;
+      margin-top: 10px;
     }
-
+  
     .search-bar input {
-        width: 80%;
+      width: 80%;
     }
-}
-
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideInRight {
-    from {
-        opacity: 0;
-        transform: translateX(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
+  }
+  

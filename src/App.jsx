@@ -9,8 +9,9 @@ import MovieDetail from './pages/MovieDetail';
 import Booking from './pages/Booking';
 import Contactpage from './pages/Contactpage';
 import Signuppage from './pages/Signuppage'; 
+import Profilepage from './pages/Profilepage';
 import './App.css';
-
+import '@fortawesome/fontawesome-free/css/all.min.css';
 function App() {
   return (
     <Router>
@@ -25,6 +26,7 @@ function App() {
             <Route path="/contact" element={<Contactpage />} />
             <Route path="/login" element={<Loginpage />} />
             <Route path="/signup" element={<Signuppage />} />
+            <Route path="/profile" element={<Profilepage />} />
           </Routes>
         </main>
         <Footer />

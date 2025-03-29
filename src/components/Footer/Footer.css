@@ -1,63 +1,123 @@
 /* Footer Section */
 .footer {
-    background-color: #222;
-    color: white;
-    padding: 50px 20px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  background-color: #222;
+  color: white;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Footer Section Header */
+.footer h3 {
+  color: #FFC300;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+/* Footer Links */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  color: #FFC300;
+}
+
+/* App Icons */
+.app-icons a {
+  margin: 0 15px;
+}
+
+.app-icons svg {
+  cursor: pointer;
+}
+
+/* Social Media Icons */
+.social-icons a {
+  margin: 0 10px;
+}
+
+.social-icons svg {
+  cursor: pointer;
+}
+
+/* Payment Icons */
+.payment-icons a {
+  margin: 0 15px;
+}
+
+.payment-icons svg {
+  cursor: pointer;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) { /* Tablets and smaller */
+  .footer {
+    padding: 30px 10px;
+    flex-direction: column;
+    align-items: center; /* Center align footer content */
+    text-align: center;
   }
-  
+
+  /* Footer Sections */
+  .footer-section {
+    width: 100%; /* Stack the sections vertically */
+    margin-bottom: 20px;
+  }
+
+  /* App, Social, Payment Icons */
+  .app-icons, .social-icons, .payment-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  /* Adjust the margins for app/social/payment icons */
+  .app-icons a, .social-icons a, .payment-icons a {
+    margin: 0 8px; /* Reduced margin for mobile */
+  }
+
   /* Footer Section Header */
   .footer h3 {
-    color: #FFC300;
-    margin-bottom: 15px;
-    font-size: 1.2rem;
-  }
-  
-  /* Footer Links */
-  .footer-section ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-section ul li {
+    font-size: 1.1rem; /* Slightly smaller heading */
     margin-bottom: 10px;
   }
-  
+
+  /* Links in the footer */
   .footer-section ul li a {
-    color: white;
-    text-decoration: none;
+    font-size: 0.9rem; /* Slightly smaller font size for mobile */
   }
-  
-  .footer-section ul li a:hover {
-    color: #FFC300;
+}
+
+@media (max-width: 480px) { /* Mobile phones */
+  .footer {
+    padding: 20px 10px;
   }
-  
-  /* App Icons */
-  .app-icons a {
-    margin: 0 15px;
+
+  /* Footer Sections */
+  .footer-section {
+    width: 100%; /* Full width for all sections */
+    margin-bottom: 15px;
   }
-  
-  .app-icons svg {
-    cursor: pointer;
+
+  /* App, Social, Payment Icons */
+  .app-icons, .social-icons, .payment-icons {
+    justify-content: center; /* Center the icons */
+    gap: 10px; /* Use gap for consistent space between icons */
   }
-  
-  /* Social Media Icons */
-  .social-icons a {
-    margin: 0 10px;
+
+  .app-icons a, .social-icons a, .payment-icons a {
+    margin: 0; /* No additional margin for icons */
   }
-  
-  .social-icons svg {
-    cursor: pointer;
-  }
-  
-  /* Payment Icons */
-  .payment-icons a {
-    margin: 0 15px;
-  }
-  
-  .payment-icons svg {
-    cursor: pointer;
-  }
-  
+}
