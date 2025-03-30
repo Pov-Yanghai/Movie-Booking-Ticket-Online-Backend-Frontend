@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './BookingSeat.css';
 
-const BookingSeat = ({ moviePrice }) => {
+const BookingSeat = ({ moviePrice = 10 }) => { // Default moviePrice if not passed
   const [selectedSeats, setSelectedSeats] = useState([]);
   const [bookedSeats, setBookedSeats] = useState(['A1', 'B5']);
   const [userInfo, setUserInfo] = useState({ name: '', email: '' });
@@ -29,6 +29,9 @@ const BookingSeat = ({ moviePrice }) => {
     setSelectedSeats([]);
     alert('Booking successful!');
   };
+
+  // Calculate total price
+  const totalPrice = selectedSeats.length * moviePrice;
 
   return (
     <div className="booking-container">
@@ -59,7 +62,7 @@ const BookingSeat = ({ moviePrice }) => {
 
       <div className="booking-summary">
         <h3>Selected Seats: {selectedSeats.join(', ')}</h3>
-        <h3>Total Price: ${(selectedSeats.length * moviePrice).toFixed(2)}</h3>
+        <h3>Total Price: ${totalPrice.toFixed(2)}</h3>
         
         <form onSubmit={handleSubmit}>
           <input

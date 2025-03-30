@@ -103,11 +103,17 @@ header {
   /* Responsive adjustments */
   @media (max-width: 768px) {
     /* Stack logo, menu, and right section on smaller screens */
+    .logo {
+      font-size: 24px;
+      letter-spacing: 1px;
+
+    }
     header {
       flex-direction: row;
       justify-content: space-between;
       padding: 15px 20px;
     }
+    
   
     .menu-toggle {
       display: block;
@@ -139,11 +145,19 @@ header {
     .search-bar {
       width: 100%;
       justify-content: center;
-      margin-top: 10px;
+    
+
     }
   
     .search-bar input {
-      width: 80%;
+      display: none;
     }
+   
+      
+      
+      
+      
+     
+    
   }
   

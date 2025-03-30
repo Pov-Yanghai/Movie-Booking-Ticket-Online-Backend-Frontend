@@ -1,4 +1,4 @@
-/* SignUp Section */
+
 .signup-section {
     background: rgba(0, 0, 0, 0.9);
     padding: 30px;
@@ -10,16 +10,17 @@
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 100px;
 }
 
-/* SignUp Heading */
+
 .signup-section h2 {
     margin-bottom: 20px;
     text-align: center;
     color: #FFC300;
 }
 
-/* Input Fields */
+
 .signup-section input {
     width: 100%;
     max-width: 350px;
@@ -39,7 +40,7 @@
     transform: scale(1.05);
 }
 
-/* Button Styling */
+
 .signup-section button {
     width: 100%;
     max-width: 350px;
@@ -54,6 +55,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 100px;
 }
 
 .signup-section button:hover {
@@ -61,14 +63,14 @@
     transform: scale(1.05);
 }
 
-/* Text Below Form */
+
 .signup-section p {
     margin-top: 10px;
     text-align: center;
     color: white;
 }
 
-/* Keyframes */
+
 @keyframes slideInUp {
     from {
         opacity: 0;
@@ -80,7 +82,7 @@
     }
 }
 
-/* ======= MOBILE RESPONSIVENESS ======= */
+
 
 @media (max-width: 768px) {
     .signup-section {

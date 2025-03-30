@@ -14,7 +14,6 @@
     font-size: 2em;
 }
 
-/* ======= MOVIE GRID ======= */
 .movie-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -25,7 +24,7 @@
     padding: 0 10px;
 }
 
-/* ======= MOVIE ITEM ======= */
+
 .movie-item {
     background: rgba(255, 87, 51, 0.85);
     padding: 15px;
@@ -38,14 +37,14 @@
     animation: fadeInUp 1s ease-out;
 }
 
-/* ======= REMOVE LINK UNDERLINE & MAKE FULL CARD CLICKABLE ======= */
+
 .movie-item a {
     text-decoration: none;
     color: inherit;
-    display: block; /* Makes the entire card clickable */
+    display: block; 
 }
 
-/* ======= MOVIE IMAGE ======= */
+
 .movie-item img {
     width: 100%;
     height: auto;
@@ -53,7 +52,7 @@
     transition: transform 0.3s ease;
 }
 
-/* ======= MOVIE TEXT STYLING ======= */
+
 .movie-item h3 {
     margin: 15px 0;
     font-size: 18px;
@@ -80,13 +79,13 @@
     color: #FFC300;
 }
 
-/* ======= HOVER EFFECT ======= */
+
 .movie-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
-/* ======= MOBILE RESPONSIVENESS ======= */
+
 @media (min-width: 1024px) {
     .movie-grid {
         grid-template-columns: repeat(4, 1fr);
@@ -128,7 +127,7 @@
     }
 }
 
-/* ======= TOUCHSCREEN EFFECTS (NO HOVER) ======= */
+
 @media (hover: none) {
     .movie-item:active {
         transform: scale(1.05);

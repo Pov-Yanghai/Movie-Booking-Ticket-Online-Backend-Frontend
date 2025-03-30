@@ -6,15 +6,20 @@
   }
   
   .screen {
-    width: 80%;
-    height: 20px;
+    width: 65%;
+    height: 60px;
     background: #3498db;
     margin: 2rem auto;
     border-radius: 4px;
     color: white;
     font-weight: bold;
-    padding:30px;
-    margin-top: 30px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+    margin-top: 20px;
+      
   }
   
   .seat-grid {

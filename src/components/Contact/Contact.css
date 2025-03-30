@@ -1,4 +1,4 @@
-/* src/pages/Contact.css */
+
 .contact-container {
   width: 95%; 
   max-width: 1200px;
@@ -11,6 +11,11 @@
   box-sizing: border-box;
   overflow: hidden; 
   
+}
+.contact-container h1 {
+  text-align: center;
+  padding-bottom: 20px;
+
 }
 
 .contact-info {
