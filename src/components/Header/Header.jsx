@@ -10,8 +10,6 @@ function Header() {
     <header>
       <div className="logo">MOVIEBOOK</div>
 
-      {/* Mobile Menu Toggle */}
-      <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>☰</div>
 
       {/* Navigation */}
       <nav>
@@ -29,10 +27,16 @@ function Header() {
         <div className="search-bar">
           <input type="text" placeholder="Search movies..." />
           <button>Search</button>
-        </div>
+           {/* Profile */}
+            {/* Mobile Menu Toggle */}
+         
+      </div>
+      <LogoProfile />
+      <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>☰</div>
+     
+        
 
-        {/* Profile */}
-        <LogoProfile />
+       
       </div>
     </header>
   );
