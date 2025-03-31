@@ -22,7 +22,7 @@ const MovieDetail = () => {
         <p><strong>Price:</strong> {movie.price}</p>
         <p><strong>Days:</strong> {movie.days}</p>
         <p><strong>Promotion:</strong> {movie.promotion}</p>
-        <button onClick={() => navigate('/login')}>Book Now</button>
+        <button onClick={() => navigate(`/booking/${movie.id}`, { state: { moviePrice: parseFloat(movie.price.replace('$', '')) } })}>Book Now</button>
       </div>
     </div>
   );

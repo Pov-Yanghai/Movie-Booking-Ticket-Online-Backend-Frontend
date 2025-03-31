@@ -1,18 +1,20 @@
 import React, { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import './BookingSeat.css';
 
-const BookingSeat = ({ moviePrice = 10 }) => { // Default moviePrice if not passed
+const BookingSeat = () => {
+  const location = useLocation();
+  const moviePrice = location.state?.moviePrice || 10; // Get price from state or default to $10
+
   const [selectedSeats, setSelectedSeats] = useState([]);
   const [bookedSeats, setBookedSeats] = useState(['A1', 'B5']);
-  const [userInfo, setUserInfo] = useState({ name: '', email: '' });
+  const [userInfo, setUserInfo] = useState({ name: '', phone: '' });
 
-  // Generate seat layout
   const rows = ['A', 'B', 'C', 'D', 'E', 'F'];
   const cols = Array.from({ length: 8 }, (_, i) => i + 1);
 
   const handleSeatClick = (seatId) => {
     if (bookedSeats.includes(seatId)) return;
-    
     setSelectedSeats(prev => 
       prev.includes(seatId) 
         ? prev.filter(id => id !== seatId)
@@ -22,7 +24,6 @@ const BookingSeat = ({ moviePrice = 10 }) => { // Default moviePrice if not pass
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your booking logic here
     console.log('Booking seats:', selectedSeats);
     console.log('User info:', userInfo);
     setBookedSeats([...bookedSeats, ...selectedSeats]);
@@ -30,13 +31,11 @@ const BookingSeat = ({ moviePrice = 10 }) => { // Default moviePrice if not pass
     alert('Booking successful!');
   };
 
-  // Calculate total price
   const totalPrice = selectedSeats.length * moviePrice;
 
   return (
     <div className="booking-container">
-      <div className="screen">Screen</div>
-      
+      <div className="screen">Choose You Seat Here</div>
       <div className="seat-grid">
         {rows.map(row => (
           <div key={row} className="seat-row">
@@ -73,10 +72,10 @@ const BookingSeat = ({ moviePrice = 10 }) => { // Default moviePrice if not pass
             required
           />
           <input
-            type="email"
-            placeholder="Your Email"
-            value={userInfo.email}
-            onChange={(e) => setUserInfo({ ...userInfo, email: e.target.value })}
+            type="tel"
+            placeholder="Your Phone Number"
+            value={userInfo.phone}
+            onChange={(e) => setUserInfo({ ...userInfo, phone: e.target.value })}
             required
           />
           <button type="submit" className="confirm-button">

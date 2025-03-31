@@ -1,4 +1,4 @@
-/* Footer Section */
+
 .footer {
   background-color: #222;
   color: white;
@@ -8,14 +8,14 @@
   flex-wrap: wrap;
 }
 
-/* Footer Section Header */
+
 .footer h3 {
   color: #FFC300;
   margin-bottom: 15px;
   font-size: 1.2rem;
 }
 
-/* Footer Links */
+
 .footer-section ul {
   list-style: none;
   padding: 0;
@@ -34,7 +34,7 @@
   color: #FFC300;
 }
 
-/* App Icons */
+
 .app-icons a {
   margin: 0 15px;
 }
@@ -43,7 +43,7 @@
   cursor: pointer;
 }
 
-/* Social Media Icons */
+
 .social-icons a {
   margin: 0 10px;
 }
@@ -52,7 +52,7 @@
   cursor: pointer;
 }
 
-/* Payment Icons */
+
 .payment-icons a {
   margin: 0 15px;
 }
@@ -61,63 +61,63 @@
   cursor: pointer;
 }
 
-/* Responsive Design for Mobile */
-@media (max-width: 768px) { /* Tablets and smaller */
+
+@media (max-width: 768px) { 
   .footer {
     padding: 30px 10px;
     flex-direction: column;
-    align-items: center; /* Center align footer content */
+    align-items: center; 
     text-align: center;
   }
 
-  /* Footer Sections */
+  
   .footer-section {
-    width: 100%; /* Stack the sections vertically */
+    width: 100%; 
     margin-bottom: 20px;
   }
 
-  /* App, Social, Payment Icons */
+ 
   .app-icons, .social-icons, .payment-icons {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
   }
 
-  /* Adjust the margins for app/social/payment icons */
+  
   .app-icons a, .social-icons a, .payment-icons a {
-    margin: 0 8px; /* Reduced margin for mobile */
+    margin: 0 8px; 
   }
 
-  /* Footer Section Header */
+
   .footer h3 {
-    font-size: 1.1rem; /* Slightly smaller heading */
+    font-size: 1.1rem; 
     margin-bottom: 10px;
   }
 
-  /* Links in the footer */
+
   .footer-section ul li a {
-    font-size: 0.9rem; /* Slightly smaller font size for mobile */
+    font-size: 0.9rem; 
   }
 }
 
-@media (max-width: 480px) { /* Mobile phones */
+@media (max-width: 480px) { 
   .footer {
     padding: 20px 10px;
   }
 
-  /* Footer Sections */
+  
   .footer-section {
-    width: 100%; /* Full width for all sections */
+    width: 100%; 
     margin-bottom: 15px;
   }
 
-  /* App, Social, Payment Icons */
+  
   .app-icons, .social-icons, .payment-icons {
-    justify-content: center; /* Center the icons */
-    gap: 10px; /* Use gap for consistent space between icons */
+    justify-content: center; 
+    gap: 10px; 
   }
 
   .app-icons a, .social-icons a, .payment-icons a {
-    margin: 0; /* No additional margin for icons */
+    margin: 0; 
   }
 }

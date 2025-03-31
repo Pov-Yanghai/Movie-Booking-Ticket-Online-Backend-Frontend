@@ -1,4 +1,4 @@
-/* Header Styles */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -13,7 +13,7 @@ header {
     animation: fadeInDown 1s ease-out;
   }
   
-  /* Logo */
+ 
   .logo {
     font-size: 28px;
     font-weight: 700;
@@ -28,7 +28,7 @@ header {
     color: #FFC300;
   }
   
-  /* Navigation Menu */
+  
   nav {
     display: flex;
     align-items: center;
@@ -52,18 +52,18 @@ header {
     border-bottom: 2px solid #FFC300;
   }
   
-  /* Search Bar and Profile Container */
+  
   .header-right {
     display: flex;
     align-items: center;
-    gap: 20px; /* Adjust gap as needed */
+    gap: 20px; 
   }
   
-  /* Search Bar */
+ 
   .search-bar {
     display: flex;
     align-items: center;
-    gap: 10px; /* Space between input and button */
+    gap: 10px;
   }
   
   .search-bar input {
@@ -92,7 +92,7 @@ header {
     transform: translateY(-2px);
   }
   
-  /* Mobile Menu Toggle */
+
   .menu-toggle {
     display: none;
     font-size: 2rem;
@@ -100,9 +100,9 @@ header {
     cursor: pointer;
   }
   
-  /* Responsive adjustments */
+  
   @media (max-width: 768px) {
-    /* Stack logo, menu, and right section on smaller screens */
+   
     .logo {
       font-size: 24px;
       letter-spacing: 1px;
@@ -138,9 +138,9 @@ header {
       display: flex;
     }
   
-    /* Adjust the search bar and profile on mobile */
+   
     .header-right {
-      gap: 10px; /* Reduce space between search bar and profile */
+      gap: 10px;
       display: flex;
       align-items: center;
 

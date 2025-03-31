@@ -9,7 +9,7 @@ export const movies = [
     },
     {
       id:2,
-      image: "./images/HO00001615.jpg",
+      image: "/images/HO00001615.jpg",
       title: "ILLUMINATION'S DESPICABLE ME4",
       price: "$12.00",
       days: "Playing: Tuesday, Thursday, Saturday",
@@ -78,5 +78,59 @@ export const movies = [
       price: "$8.00",
       days: "Playing: Tuesday, Thursday, Saturday",
       promotion: "Promotion: 20% Off for Students"
+    },
+      {
+      id:11,
+      image: "/images/HO00001836.jpg",
+      title: "Snow White",
+      price: "$8.00",
+      days: "Playing:Thursday, Saturday,Sunday",
+      promotion: "Promotion: $2 Off on Online Booking"
+
+    },
+    {
+      id:12,
+      image: "/images/HO00001842.jpg",
+      title: "Flat Girls",
+      price: "$9.99",
+      days: "Playing:Thursday, Saturday,Sunday",
+      promotion: "Promotion: $2 Off on Online Booking"
+    
+    },
+    {
+      id:13,
+      image: "/images/HO00001857.jpg",
+      title: "វិញ្ញាណនិស្សិតពេទ្យ",
+      price: "$10.00",
+      days: "Playing:Monday, Tuesday, Wednesday, Thursday, Friday",
+      promotion: "Promotion: 20% Off for Students"
+
+    
+    },
+    {
+      id:14,
+      image: "/images/HO00001864.jpg",
+      title: "ណាចា",
+      price: "$12.00",
+      days: "Playing: Saturday, Sunday",
+      promotion: "Promotion: 20% Off for Students"
+    },
+    {
+      id:15,
+      image: "/images/HO00001866.jpg",
+      title: "ចំណងនិស្ស័យ​ នាគរាជ",
+      price: "$12.00",
+      days: "Playing: Tuesday, Thursday, Saturday",
+      promotion: "Promotion: 20% Off for Students"
+      
+
+
     }
+
+    
+
+
+
+
+
   ];

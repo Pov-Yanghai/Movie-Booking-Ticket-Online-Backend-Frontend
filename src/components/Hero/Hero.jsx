@@ -7,7 +7,7 @@ const Hero = ({
   title = "Book Your Movie Tickets Now",
   description = "Find your favorite movies and book tickets for the latest releases in cinemas near you.",
   buttonText = "Book Now",
-  buttonLink = "/booking", // Changed default to proper route
+  buttonLink = "/booking",
   onButtonClick,
   backgroundImage,
   subtitle,

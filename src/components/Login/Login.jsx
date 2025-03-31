@@ -19,7 +19,7 @@ const Login = () => {
 
     if (user) {
       alert('Login successful');
-      navigate('/'); // Redirect to home after login
+      navigate('/'); 
     } else {
       alert('Invalid email or password');
     }

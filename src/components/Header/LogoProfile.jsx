@@ -3,10 +3,10 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
-import './LogoProfile.css';  // Update the path to the new CSS file
+import './LogoProfile.css';  
 
 const LogoProfile = () => {
-  const isAuthenticated = false; // Replace with your authentication logic
+  const isAuthenticated = false; 
   const navigate = useNavigate();
 
   const handleClick = () => {

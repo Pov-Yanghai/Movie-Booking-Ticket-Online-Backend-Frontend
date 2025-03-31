@@ -9,7 +9,7 @@ const SignUp = () => {
     confirmPassword: ''
   });
 
-  const navigate = useNavigate(); // Initialize the useNavigate hook
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();

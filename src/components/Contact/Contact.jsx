@@ -21,8 +21,8 @@ function Contact() {
       <div className="contact-info">
         <div className="hotline">
           <h2>Hotline</h2>
-          <p><PhoneIcon className="icon" /> 081 300 400</p>
-          <p><EnvelopeIcon className="icon" /> info@legend.com.kh</p>
+          <p><PhoneIcon className="icon" />096 781 7889</p>
+          <p><EnvelopeIcon className="icon" /> info@moviebook.com.kh</p>
           <p><ChatBubbleLeftIcon className="icon" /> Messenger</p>
         </div>
 

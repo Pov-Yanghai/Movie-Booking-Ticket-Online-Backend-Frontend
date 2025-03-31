@@ -5,7 +5,9 @@ const bannerImages = [
   { src: '/images/banner1.jpeg', caption: 'Our promotion' },
   { src: '/images/banner2.jpeg', caption: 'Our promotion' },
   { src: '/images/banner4.jpeg', caption: 'Our promotion' },
-  { src: '/images/banner5.jpeg', caption: 'Our promotion' }
+  { src: '/images/banner5.jpeg', caption: 'Our promotion' },
+  
+  
 ];
 
 const Banner = () => {
