@@ -11,15 +11,17 @@ const bannerImages = [
 ];
 
 const Banner = () => {
+  // State to track the current image index
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
+  // Effect to change the image every 5 seconds
   useEffect(() => {
-    const interval = setInterval(() => {
+    // Set an interval to change the image index
+    const interval = setInterval(() => { 
       setCurrentImageIndex(prev => (prev + 1) % bannerImages.length);
     }, 5000);
     return () => clearInterval(interval);
   }, []);
-
+  // Function to handle the previous button click
   const handlePrev = () => {
     setCurrentImageIndex(prev => (prev - 1 + bannerImages.length) % bannerImages.length);
   };
@@ -40,8 +42,8 @@ const Banner = () => {
         {bannerImages.map((_, index) => (
           <button 
             key={index}
-            className={index === currentImageIndex ? 'active' : ''}
-            onClick={() => setCurrentImageIndex(index)}
+            className={index === currentImageIndex ? 'active' : ''} // Active class for current image
+            onClick={() => setCurrentImageIndex(index)} // Set current image index on dot click
           />
         ))}
       </div>

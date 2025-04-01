@@ -41,7 +41,7 @@ const BookingSeat = () => {
       <div className="seat-grid">
         
         {rows.map(row => (
-          <div key={row} className="seat-row"> //
+          <div key={row} className="seat-row"> 
             
             {cols.map(col => { 
               const seatId = `${row}${col}`; // Generate seat ID
