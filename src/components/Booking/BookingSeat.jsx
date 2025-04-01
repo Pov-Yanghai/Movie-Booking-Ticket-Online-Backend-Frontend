@@ -14,6 +14,7 @@ const BookingSeat = () => {
   const cols = Array.from({ length: 8 }, (_, i) => i + 1);
   
   const handleSeatClick = (seatId) => {
+    // If the seat is already booked, do nothing
     if (bookedSeats.includes(seatId)) return;
     setSelectedSeats(prev => 
       prev.includes(seatId) 
@@ -21,13 +22,14 @@ const BookingSeat = () => {
         : [...prev, seatId]
     );
   };
-
+  // Handle form submission
   const handleSubmit = (e) => {
+    // Prevent default form submission
     e.preventDefault();
     console.log('Booking seats:', selectedSeats);
     console.log('User info:', userInfo);
-    setBookedSeats([...bookedSeats, ...selectedSeats]);
-    setSelectedSeats([]);
+    setBookedSeats([...bookedSeats, ...selectedSeats]);// Add selected seats to booked seats
+    setSelectedSeats([]); // Clear selected seats after booking
     alert('Booking successful!');
   };
 
@@ -37,10 +39,13 @@ const BookingSeat = () => {
     <div className="booking-container">
       <div className="screen">Choose You Seat Here</div>
       <div className="seat-grid">
+        
         {rows.map(row => (
-          <div key={row} className="seat-row">
-            {cols.map(col => {
-              const seatId = `${row}${col}`;
+          <div key={row} className="seat-row"> //
+            
+            {cols.map(col => { 
+              const seatId = `${row}${col}`; // Generate seat ID
+              // Check if the seat is booked or selected
               const isBooked = bookedSeats.includes(seatId);
               const isSelected = selectedSeats.includes(seatId);
               
@@ -68,7 +73,7 @@ const BookingSeat = () => {
             type="text"
             placeholder="Your Name"
             value={userInfo.name}
-            onChange={(e) => setUserInfo({ ...userInfo, name: e.target.value })}
+            onChange={(e) => setUserInfo({ ...userInfo, name: e.target.value })} // Update name in userInfo state
             required
           />
           <input
