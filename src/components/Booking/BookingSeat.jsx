@@ -3,16 +3,16 @@ import { useLocation } from 'react-router-dom';
 import './BookingSeat.css';
 
 const BookingSeat = () => {
+  // Get the movie price from the location state
   const location = useLocation();
   const moviePrice = location.state?.moviePrice || 10; // Get price from state or default to $10
-
-  const [selectedSeats, setSelectedSeats] = useState([]);
-  const [bookedSeats, setBookedSeats] = useState(['A1', 'B5']);
+  
+  const [selectedSeats, setSelectedSeats] = useState([]); // Track selected seats
+  const [bookedSeats, setBookedSeats] = useState(['A1', 'B5']); 
   const [userInfo, setUserInfo] = useState({ name: '', phone: '' });
-
   const rows = ['A', 'B', 'C', 'D', 'E', 'F'];
   const cols = Array.from({ length: 8 }, (_, i) => i + 1);
-
+  
   const handleSeatClick = (seatId) => {
     if (bookedSeats.includes(seatId)) return;
     setSelectedSeats(prev => 
