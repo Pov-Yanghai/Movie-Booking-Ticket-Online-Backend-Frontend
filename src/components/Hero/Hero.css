@@ -139,6 +139,7 @@
   transition: transform 0.3s ease;
   overflow: hidden;
   width: 100%;
+  height: auto;
   max-width: 300px; 
   padding: 0 10px 10px 10px;
 }
