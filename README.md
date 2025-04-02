@@ -62,13 +62,13 @@ moviebook/
 |   |__ index.jsx     ## Entry point
 |_______index.html     ## Main HTML file 
 
-Exampple of Our Web page   
-## Home	Movies  Booking	Contact  
-##       Movies container 
-###          Footer 
+## Exampple of Our Web page   
+ Home	Movies  Booking	Contact  
+       Movies container 
+          Footer 
 
 ## Contact
-## Development Team
+ Development Team
 📧 Team4@company.com
 📞 +855 96 7817889
 
