@@ -2,7 +2,7 @@
 
 
 A modern cinema ticket booking platform built with React.js, featuring real-time seat selection, movie listings, and promotional management.
-
+## FrontEnd 
 ## Table of Contents
 -Features
 -Installation
@@ -75,3 +75,6 @@ moviebook/
 Cinema Partnerships
 📧 CADT@moviebook.kh
 📞 +855 87 888 045
+
+
+## BackEnd
