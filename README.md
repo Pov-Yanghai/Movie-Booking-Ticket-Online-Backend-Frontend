@@ -63,7 +63,7 @@ moviebook/
 |_______index.html     ## Main HTML file 
 
 ## Exampple of Our Web page   
- Home	     Movies     Booking	   Contact  
+ Home	   Movies    Booking	   Contact  
        Movies container 
           Footer 
 
