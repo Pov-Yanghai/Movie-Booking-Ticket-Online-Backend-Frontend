@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Banner from '../components/Banner/Banner';
-import Movies from '../components/Movies/Movies';
 import Showtimes from '../components/Showtimes/Showtimes';
+import Movies from '../components/Movies/Movies';
+
 function Home() {
+  const [selectedDay, setSelectedDay] = useState(null);
+
   return (
     <div>
       <Banner />
-      <Showtimes />
-      <Movies />
+      <Showtimes onDaySelect={setSelectedDay} />
+      <Movies selectedDay={selectedDay} />
     </div>
   );
 }

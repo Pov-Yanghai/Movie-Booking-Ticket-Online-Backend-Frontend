@@ -1,53 +1,22 @@
-.showtimes-section {
-  padding: 2rem 1rem;
-  max-width: 1200px;
-  margin: 0 auto;
+.showtimes-container {
+  padding-top:70px;
 }
-
-.showtimes-section h2 {
-  color: #333;
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
-  border-bottom: 2px solid #ddd;
-  padding-bottom: 0.5rem;
-}
-
-.day-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
-}
-
-.day-column {
-  background: #fff;
-  border-radius: 8px;
-  padding: 1rem;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.day-label {
-  font-weight: 600;
-  color: #666;
-  margin-bottom: 0.5rem;
-  font-size: 0.9rem;
-}
-
-.date-container {
+.days-list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  
 }
 
-.date-number {
-  font-weight: 700;
-  font-size: 1.8rem;
-  color: #333;
+.days-list button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #eee;
+  cursor: pointer;
 }
 
-.date-month {
-  font-size: 0.9rem;
-  color: #666;
-  text-transform: uppercase;
-  margin-top: -4px;
+.days-list button.active {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
 }
